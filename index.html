@@ -104,17 +104,6 @@ h1{
   align-items:center;
   gap:10px;
 }
-h1:before{
-  content:"";
-  width:34px;
-  height:34px;
-  border-radius:12px;
-  background:
-    radial-gradient(circle at 50% 38%, #ffffff 0 28%, transparent 30%),
-    linear-gradient(145deg,#d8eadc,#ffffff);
-  border:1px solid #d8eadc;
-  display:inline-block;
-}
 .tabs{
   gap:7px;
 }
@@ -405,11 +394,31 @@ th{
   text-transform:uppercase;
   color:#4b8c93;
 }
+.header-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
 
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+.sub {
+  font-size: 12px;
+  color: #666;
+}
 </style>
 </head>
 <body>
-<header><div class="kicker">Training Reference</div><h1>Cafe Manual</h1></header>
+<header class="header-wrap">
+  <img src="logo.png" class="logo">
+  <h1>Houseblend</h1>
+  <p class="sub">Cafe manual</p>
+</header>
 <nav class="tabs">
   <button class="tab active" onclick="showSection('vision', this)">Vision</button>
   <button class="tab" onclick="showSection('recipe', this)">Recipe</button>
