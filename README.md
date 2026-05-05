@@ -1,2 +1,0 @@
-# Houseblend
-Cafe manual 
